@@ -1,0 +1,121 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "O valor a ser pago será de:  5750.0 reais\n"
+     ]
+    }
+   ],
+   "source": [
+    "anoCarro = int(input(\"digite o ano que do seu carro\"))\n",
+    "precoCarro = float(input(\"digite o preço do seu carro\"))\n",
+    "\n",
+    "if anoCarro < 1990:\n",
+    "    taxa = (0.01 * precoCarro)\n",
+    "    precoCarro = precoCarro + taxa\n",
+    "    print(\"O valor a ser pago será de: \",precoCarro, \"reais\")\n",
+    "\n",
+    "else:\n",
+    "    taxa = (0.15 * precoCarro)\n",
+    "    precoCarro = precoCarro + taxa\n",
+    "    print(\"O valor a ser pago será de: \",precoCarro, \"reais\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "O salário de técnico era de:  200.0 reais, agora é de 260.0  reais e a diferença é de 60.0 reais\n"
+     ]
+    }
+   ],
+   "source": [
+    "\n",
+    "codigoCargo= int(input(\"Digite o código do seu cargo\"))\n",
+    "# digitar o cargo:\n",
+    "# Gerente = 101\n",
+    "# engenheiro = 102\n",
+    "# técnico = 103\n",
+    "salario = float(input(\"Digite o seu salário\"))  \n",
+    "# digitar o salario\n",
+    "\n",
+    "\n",
+    "    #Gerente\n",
+    "if( codigoCargo == 101):\n",
+    "    # o código do cargo é igual a 101?\n",
+    "    salarioNovo = (10/100 * salario ) + salario\n",
+    "    # armazenando um novo salario que é igual ao antigo salario vezes 10/100\n",
+    "    diferença = salarioNovo - salario\n",
+    "    # a diferença entre o salario novo e o salario antigo\n",
+    "    print( \"O salário de gerente era de: \",salario,\"reais, agora é de\", salarioNovo,\" reais e a diferença é de\", diferença,\"reais\")\n",
+    "\n",
+    "  #Engenheiro\n",
+    "elif(codigoCargo == 102):\n",
+    "     # o código do cargo é igual a 102?\n",
+    "    salarioNovo = (20/100 * salario) + salario\n",
+    "    # o salario novo vai ser igual ao antigo salario vezes 20% mais o antigo salario\n",
+    "    diferença = salarioNovo - salario\n",
+    "    # a diferença entre o salario novo e o salario antigo\n",
+    "    print( \"O salário do engenheiro era de: \", salario,\"reais, agora é de\", salarioNovo,\" reais e a diferença é de\", diferença,\"reais\")\n",
+    "\n",
+    "    #Técnico\n",
+    "elif(codigoCargo == 103 ):\n",
+    "    # o código do cargo é igual a 102?\n",
+    "    salarioNovo = (30/100 * salario) + salario\n",
+    "    # o salario novo vai ser igual ao antigo salario vezes 20% mais antigo salario\n",
+    "    diferença = salarioNovo - salario\n",
+    "    # a diferença entre o salario novo e o salario antigo \n",
+    "    print( \"O salário de técnico era de: \", salario,\"reais, agora é de\", salarioNovo,\" reais e a diferença é de\", diferença,\"reais\")\n",
+    "\n",
+    "   \n",
+    "  # Não pertence a nenhum dos cargos citados\n",
+    "else:\n",
+    "    salarioNovo = ( 0.40 * salario) + salario\n",
+    "    #Aumento de 40% no salario antigo\n",
+    "    diferença = salarioNovo - salario\n",
+    "    #a diferença entre o salario novo e o salario antigo\n",
+    "    print( \"O seu salário era de\", salario,\", agora é de\", salarioNovo,\"e a diferença é de\", diferença,)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.9"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
